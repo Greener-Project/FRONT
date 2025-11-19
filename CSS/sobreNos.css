@@ -1,0 +1,128 @@
+/* ========== PÁGINA SOBRE ========== */
+
+/* Header específico para Sobre */
+.header-sobre {
+    background: linear-gradient(rgba(0, 103, 79, 0.9), rgba(0, 103, 79, 0.8)), url('../img/fundo.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 5% 80px;
+    text-align: center;
+    color: var(--branco);
+    margin-top: 80px;
+}
+
+.headline-sobre h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    color: var(--branco);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.headline-sobre p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Sobre */
+.sobre-section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-content {
+    background: var(--branco);
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid var(--verde-claro);
+}
+
+.sobre-texto h3 {
+    font-size: 1.8rem;
+    color: var(--verde-principal);
+    margin: 50px 0 25px 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--verde-claro);
+}
+
+.sobre-texto h3:first-child {
+    margin-top: 0;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--cinza-escuro);
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.sobre-texto ul {
+    margin: 25px 0;
+    padding-left: 30px;
+}
+
+.sobre-texto li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--cinza-escuro);
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.sobre-texto li:before {
+    content: "🌱";
+    position: absolute;
+    left: -25px;
+}
+
+/* Destaques */
+.destaque {
+    background: var(--verde-claro);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--verde-principal);
+    margin: 30px 0;
+}
+
+.destaque p {
+    margin: 0;
+    font-style: italic;
+    color: var(--verde-principal);
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-sobre {
+        padding: 100px 5% 60px;
+        margin-top: 70px;
+    }
+
+    .headline-sobre h2 {
+        font-size: 2.5rem;
+    }
+
+    .headline-sobre p {
+        font-size: 1.1rem;
+    }
+
+    .sobre-content {
+        padding: 30px 20px;
+    }
+
+    .sobre-texto h3 {
+        font-size: 1.5rem;
+    }
+
+    .sobre-texto p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
