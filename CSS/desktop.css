@@ -1,0 +1,79 @@
+/* ========== DESKTOP STYLES (1025px+) ========== */
+@media (min-width: 1025px) {
+    /* LAYOUT GERAL */
+    .container { width: 90%; max-width: 1200px; padding: 0 15px; }
+    body { font-size: 16px; }
+
+    /* HEADER */
+    .header-container { padding: 25px 0; }
+    .logo { font-size: 26px; }
+    .logo-img { height: 45px; }
+    nav ul { gap: 35px; }
+    nav a { font-size: 17px; position: relative; padding: 8px 0; }
+    nav a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 0; background-color: var(--verde-principal); transition: width 0.3s ease; }
+    nav a:hover::after { width: 100%; }
+    .btn { padding: 12px 25px; font-size: 16px; }
+
+    /* HERO */
+    .hero { padding: 140px 0; min-height: 80vh; display: flex; align-items: center; }
+    .hero h1 { font-size: 3.8rem; line-height: 1.1; margin-bottom: 25px; }
+    .hero p { font-size: 1.5rem; margin-bottom: 40px; }
+    .search-box { max-width: 800px; }
+    .search-box input { padding: 20px 25px; font-size: 1.1rem; }
+    .search-box button { padding: 0 40px; font-size: 1.2rem; }
+
+    /* FEATURES */
+    .features { padding: 120px 0; }
+    .section-title { margin-bottom: 70px; }
+    .section-title h2 { font-size: 3rem; }
+    .section-title p { font-size: 1.3rem; }
+    .features-grid { grid-template-columns: repeat(3, 1fr); gap: 50px; }
+    .feature-card { padding: 50px 40px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .feature-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); }
+    .feature-icon { font-size: 50px; margin-bottom: 25px; }
+    .feature-card h3 { font-size: 1.6rem; margin-bottom: 20px; }
+
+    /* JOBS */
+    .jobs { padding: 120px 0; }
+    .jobs-grid { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .job-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .job-card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); }
+    .job-header { padding: 25px; }
+    .job-header h3 { font-size: 1.4rem; }
+    .job-body { padding: 25px; }
+
+    /* IMPACT */
+    .impact { padding: 120px 0; }
+    .impact-stats { grid-template-columns: repeat(4, 1fr); gap: 50px; }
+    .stat { padding: 50px 30px; transition: transform 0.3s ease; }
+    .stat:hover { transform: scale(1.05); }
+    .stat-number { font-size: 3.5rem; }
+    .stat-text { font-size: 1.3rem; }
+
+    /* FOOTER */
+    footer { padding: 80px 0 40px; }
+    .footer-content { gap: 60px; margin-bottom: 50px; }
+    .footer-logo { font-size: 24px; }
+    .footer-column h3 { font-size: 1.4rem; }
+    .footer-links a { font-size: 1rem; }
+    .footer-bottom { padding-top: 40px; font-size: 1rem; }
+}
+
+/* ========== LARGE DESKTOPS (1440px+) ========== */
+@media (min-width: 1440px) {
+    .container { max-width: 1400px; }
+    .hero h1 { font-size: 4.2rem; }
+    .hero p { font-size: 1.7rem; }
+    .features-grid { gap: 60px; }
+    .feature-card { padding: 60px 50px; }
+    .jobs-grid { gap: 50px; }
+}
+
+/* ========== EXTRA LARGE DESKTOPS (1920px+) ========== */
+@media (min-width: 1920px) {
+    .container { max-width: 1600px; }
+    body { font-size: 18px; }
+    .hero h1 { font-size: 4.8rem; }
+    .section-title h2 { font-size: 3.5rem; }
+    .features-grid { gap: 70px; }
+}
