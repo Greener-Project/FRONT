@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil do usuário - EcoTrabalhos">
+    <title>Meu Perfil - EcoTrabalhos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/perfil.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="EcoTrabalhos" class="logo-img">
+                <span class="logo-text">EcoTrabalhos</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-main">
+        <div class="container">
+            <div class="profile-header">
+                <h1>Meu Perfil</h1>
+                <p>Gerencie suas informações e preferências</p>
+            </div>
+
+            <div class="profile-content">
+                <!-- Sidebar com navegação do perfil -->
+                <div class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="img/avatar.jpg" alt="Foto do perfil">
+                            <button class="edit-avatar-btn">Alterar Foto</button>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Maria Silva</h2>
+                            <p class="profile-email">maria.silva@email.com</p>
+                            <p class="profile-bio">Engenheira Ambiental apaixonada por sustentabilidade e energias renováveis</p>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Vagas Aplicadas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Vagas Salvas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Entrevistas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="profile-nav">
+                        <a href="#info" class="nav-item active">Informações Pessoais</a>
+                        <a href="#preferences" class="nav-item">Preferências</a>
+                        <a href="#applications" class="nav-item">Minhas Candidaturas</a>
+                        <a href="#saved" class="nav-item">Vagas Salvas</a>
+                        <a href="#settings" class="nav-item">Configurações</a>
+                    </nav>
+                </div>
+
+                <!-- Conteúdo principal do perfil -->
+                <div class="profile-main-content">
+                    <!-- Seção Informações Pessoais -->
+                    <section id="info" class="profile-section">
+                        <div class="section-header">
+                            <h3>Informações Pessoais</h3>
+                            <button class="btn-edit">Editar</button>
+                        </div>
+                        
+                        <div class="info-grid">
+                            <div class="info-group">
+                                <label>Nome Completo</label>
+                                <p>Maria Silva Santos</p>
+                            </div>
+                            <div class="info-group">
+                                <label>E-mail</label>
+                                <p>maria.silva@email.com</p>
+                            </div>
+                            <div class="info-group">
+                                <label>Telefone</label>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                            <div class="info-group">
+                                <label>Localização</label>
+                                <p>São Paulo, SP</p>
+                            </div>
+                            <div class="info-group">
+                                <label>Data de Nascimento</label>
+                                <p>15/03/1990</p>
+                            </div>
+                            <div class="info-group">
+                                <label>CPF</label>
+                                <p>123.456.789-00</p>
+                            </div>
+                        </div>
+
+                        <div class="section-header">
+                            <h3>Informações Profissionais</h3>
+                        </div>
+                        
+                        <div class="info-grid">
+                            <div class="info-group">
+                                <label>Área de Atuação</label>
+                                <p>Engenharia Ambiental</p>
+                            </div>
+                            <div class="info-group">
+                                <label>Nível de Experiência</label>
+                                <p>Pleno (3-5 anos)</p>
+                            </div>
+                            <div class="info-group">
+                                <label>Formação Acadêmica</label>
+                                <p>Bacharelado em Engenharia Ambiental - USP</p>
+                            </div>
+                            <div class="info-group full-width">
+                                <label>Resumo Profissional</label>
+                                <p>Engenheira ambiental com 4 anos de experiência em projetos de sustentabilidade, gestão de recursos hídricos e implementação de sistemas de energia renovável. Comprometida com a criação de soluções sustentáveis para desafios ambientais.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/logo-white.png" alt="EcoTrabalhos" class="logo-img">
+                        <span class="logo-text">EcoTrabalhos</span>
+                    </div>
+                    <p>Conectando talentos a empregos que fazem a diferença para o planeta. Junte-se à revolução verde!</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                        <li><a href="perfil.html">Perfil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Áreas Verdes</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Energia Renovável</a></li>
+                        <li><a href="#">Gestão Ambiental</a></li>
+                        <li><a href="#">Agricultura Sustentável</a></li>
+                        <li><a href="#">Economia Circular</a></li>
+                        <li><a href="#">Mobilidade Elétrica</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contato@ecotrabalhos.com">contato@ecotrabalhos.com</a></li>
+                        <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
+                        <li><a href="fale-conosco.html">Trabalhe Conosco</a></li>
+                        <li><a href="fale-conosco.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EcoTrabalhos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
