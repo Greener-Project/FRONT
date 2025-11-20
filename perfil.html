@@ -7,6 +7,9 @@
     <title>Meu Perfil - EcoTrabalhos</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/perfil.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/desktop.css">
 </head>
 <body>
     <header>
@@ -18,7 +21,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
                     <li><a href="integrantes.html">Integrantes</a></li>
                     <li><a href="fale-conosco.html">Fale Conosco</a></li>
                     <li><a href="perfil.html">Perfil</a></li>
@@ -38,47 +41,10 @@
             </div>
 
             <div class="profile-content">
-                <!-- Sidebar com navegação do perfil -->
-                <div class="profile-sidebar">
-                    <div class="profile-card">
-                        <div class="profile-avatar">
-                            <img src="img/avatar.jpg" alt="Foto do perfil">
-                            <button class="edit-avatar-btn">Alterar Foto</button>
-                        </div>
-                        <div class="profile-info">
-                            <h2>Maria Silva</h2>
-                            <p class="profile-email">maria.silva@email.com</p>
-                            <p class="profile-bio">Engenheira Ambiental apaixonada por sustentabilidade e energias renováveis</p>
-                        </div>
-                        <div class="profile-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">12</span>
-                                <span class="stat-label">Vagas Aplicadas</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">8</span>
-                                <span class="stat-label">Vagas Salvas</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">3</span>
-                                <span class="stat-label">Entrevistas</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <nav class="profile-nav">
-                        <a href="#info" class="nav-item active">Informações Pessoais</a>
-                        <a href="#preferences" class="nav-item">Preferências</a>
-                        <a href="#applications" class="nav-item">Minhas Candidaturas</a>
-                        <a href="#saved" class="nav-item">Vagas Salvas</a>
-                        <a href="#settings" class="nav-item">Configurações</a>
-                    </nav>
-                </div>
-
                 <!-- Conteúdo principal do perfil -->
                 <div class="profile-main-content">
                     <!-- Seção Informações Pessoais -->
-                    <section id="info" class="profile-section">
+                    <section class="profile-section">
                         <div class="section-header">
                             <h3>Informações Pessoais</h3>
                             <button class="btn-edit">Editar</button>
@@ -128,12 +94,49 @@
                                 <label>Formação Acadêmica</label>
                                 <p>Bacharelado em Engenharia Ambiental - USP</p>
                             </div>
-                            <div class="info-group full-width">
+                            <div class="info-group">
                                 <label>Resumo Profissional</label>
-                                <p>Engenheira ambiental com 4 anos de experiência em projetos de sustentabilidade, gestão de recursos hídricos e implementação de sistemas de energia renovável. Comprometida com a criação de soluções sustentáveis para desafios ambientais.</p>
+                                <p>Engenheira ambiental com 4 anos de experiência em projetos de sustentabilidade, gestão de recursos hídricos e implementação de sistemas de energia renovável.</p>
                             </div>
                         </div>
                     </section>
+                </div>
+
+                <!-- Sidebar com navegação do perfil -->
+                <div class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <img src="img/avatar.jpg" alt="Foto do perfil">
+                            <button class="edit-avatar-btn">Alterar Foto</button>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Maria Silva</h2>
+                            <p class="profile-email">maria.silva@email.com</p>
+                            <p class="profile-bio">Engenheira Ambiental apaixonada por sustentabilidade e energias renováveis</p>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Vagas Aplicadas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Vagas Salvas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Entrevistas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="profile-nav">
+                        <a href="#" class="nav-item active">Informações</a>
+                        <a href="#" class="nav-item">Preferências</a>
+                        <a href="#" class="nav-item">Candidaturas</a>
+                        <a href="#" class="nav-item">Vagas Salvas</a>
+                        <a href="#" class="nav-item">Configurações</a>
+                    </nav>
                 </div>
             </div>
         </div>
