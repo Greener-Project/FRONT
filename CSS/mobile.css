@@ -1,136 +1,162 @@
-/* ========== PÁGINA FALE CONOSCO ========== */
+/* ===========================
+    MENU HAMBURGUER (MOBILE)
+=========================== */
 
-/* Header específico para Fale Conosco */
-.header-faleconosco {
-    background: linear-gradient(rgba(0, 103, 79, 0.9), rgba(0, 103, 79, 0.8)), url('../img/fundo.avif');
-    background-size: cover;
-    background-position: center;
-    padding: 80px 5% 60px;
-    text-align: center;
-    color: var(--branco);
-    margin-top: 70px;
-}
-
-.headline-faleconosco h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.5rem;
-    color: var(--branco);
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.headline-faleconosco p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Section Contato */
-.contato-section {
-    padding: 60px 0;
-}
-
-.contato-container {
-    display: flex;
+/* O botão só deve aparecer nas media queries, mas definimos a base aqui */
+.hamburger {
+    display: none; /* Escondido por padrão (desktop) */
+    flex-direction: column;
+    background: transparent; /* Sem fundo branco */
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    width: 40px; /* Um pouco maior para toque */
+    height: 40px;
+    position: relative;
+    z-index: 2000;
     justify-content: center;
     align-items: center;
 }
 
-/* Container do Formulário */
-.form-container {
+/* As linhas do ícone */
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: var(--verde-principal); /* FORÇA A COR VERDE */
+    margin: 3px 0;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+/* Animação do ícone virando X */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* ===========================
+        MENU MOBILE (GAVETA)
+=========================== */
+.mobile-menu {
+    position: fixed;
+    top: 0; /* Começa do topo da tela */
+    left: 0;
+    width: 75%; /* Ocupa 75% da tela, mais elegante */
+    max-width: 300px;
+    height: 100vh; /* Altura total */
     background: var(--branco);
-    padding: 30px 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border: 1px solid var(--verde-claro);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
-
-.form-container h3 {
-    font-size: 1.5rem;
-    color: var(--verde-principal);
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-.contato-form {
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    transform: translateX(-100%); /* Escondido na esquerda */
+    transition: transform 0.35s ease;
+    z-index: 1999; /* Logo abaixo do botão hamburguer */
+    padding: 80px 20px 20px 20px; /* Padding top alto para não ficar embaixo do botão */
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
-.form-group {
+.mobile-menu.active {
+    transform: translateX(0); /* Aparece */
+}
+
+/* Navegação interna */
+.nav-mobile ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    gap: 15px;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-    padding: 14px;
-    border: 2px solid var(--verde-claro);
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--branco);
-    width: 100%;
+.nav-mobile a {
+    display: block;
+    padding: 12px 15px;
     color: var(--cinza-escuro);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.btn-enviar {
-    background: var(--verde-principal);
-    color: white;
-    padding: 16px 30px;
-    border: none;
+    text-decoration: none;
+    font-size: 1.1rem;
     border-radius: 8px;
-    font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 100%;
-    border: 2px solid var(--verde-principal);
+    border-bottom: 1px solid var(--cinza-claro);
 }
 
-/* Tablets */
-@media (min-width: 768px) {
-    .header-faleconosco {
-        padding: 120px 5% 80px;
-        margin-top: 80px;
+.nav-mobile a:hover {
+    background: var(--verde-claro);
+    color: var(--verde-principal);
+    padding-left: 20px; /* Efeitinho de movimento */
+    transition: all 0.3s;
+}
+
+/* Botões Mobile */
+.mobile-auth {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Overlay (Fundo escuro) */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 1500;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ===========================
+    MEDIA QUERIES (CONTROLE)
+=========================== */
+
+/* TELAS MENORES (Celular e Tablet) */
+@media (max-width: 1024px) {
+    /* Mostra o Hamburguer */
+    .hamburger {
+        display: flex !important;
     }
 
-    .headline-faleconosco h2 {
-        font-size: 3.5rem;
+    /* Esconde ABSOLUTAMENTE o menu desktop */
+    .nav-desktop,
+    .desktop-auth {
+        display: none !important;
+    }
+    
+    /* Ajuste no Header para o logo não estourar */
+    .header-container {
+        padding: 10px 15px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem; /* Diminui um pouco a fonte do logo no mobile */
+    }
+}
+
+/* TELAS GRANDES (Desktop) */
+@media (min-width: 1025px) {
+    /* Esconde coisas de mobile */
+    .hamburger,
+    .mobile-menu,
+    .menu-overlay {
+        display: none !important;
     }
 
-    .headline-faleconosco p {
-        font-size: 1.3rem;
-    }
-
-    .form-container {
-        padding: 50px;
-    }
-
-    .form-container h3 {
-        font-size: 2rem;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        padding: 16px;
-    }
-
-    .btn-enviar {
-        padding: 18px 40px;
+    /* Garante que o desktop apareça */
+    .nav-desktop,
+    .desktop-auth {
+        display: flex !important;
     }
 }

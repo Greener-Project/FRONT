@@ -77,3 +77,29 @@
     .section-title h2 { font-size: 3.5rem; }
     .features-grid { gap: 70px; }
 }
+
+/* FORÇAR a aparecer no desktop */
+@media (min-width: 1025px) {
+    .nav-desktop {
+        display: flex !important;
+    }
+
+    .nav-desktop ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        align-items: center;
+    }
+
+    .desktop-auth {
+        display: flex !important;
+        gap: 15px;
+    }
+
+    /* Esconder itens mobile no desktop */
+    .hamburger,
+    .mobile-menu,
+    .mobile-auth {
+        display: none !important;
+    }
+}
