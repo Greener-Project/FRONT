@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Perfil do usuário - EcoTrabalhos">
     <title>Meu Perfil - EcoTrabalhos</title>
+
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/perfil.css">
-    <link rel="stylesheet" href="CSS/mobile.css">
-    <link rel="stylesheet" href="CSS/media.css">
-    <link rel="stylesheet" href="CSS/desktop.css">
+    <link rel="stylesheet" href="CSS/desktop.css"> <link rel="stylesheet" href="CSS/mobile.css">  <link rel="stylesheet" href="CSS/media.css">
 </head>
 <body>
     <header>
@@ -18,7 +17,8 @@
                 <img src="img/logo.png" alt="EcoTrabalhos" class="logo-img">
                 <span class="logo-text">EcoTrabalhos</span>
             </a>
-            <nav>
+
+            <nav class="nav-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
@@ -27,9 +27,16 @@
                     <li><a href="perfil.html">Perfil</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
+
+            <div class="auth-buttons desktop-auth">
                 <a href="#" class="btn btn-outline">Sair</a>
             </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
@@ -41,9 +48,7 @@
             </div>
 
             <div class="profile-content">
-                <!-- Conteúdo principal do perfil -->
                 <div class="profile-main-content">
-                    <!-- Seção Informações Pessoais -->
                     <section class="profile-section">
                         <div class="section-header">
                             <h3>Informações Pessoais</h3>
@@ -102,7 +107,6 @@
                     </section>
                 </div>
 
-                <!-- Sidebar com navegação do perfil -->
                 <div class="profile-sidebar">
                     <div class="profile-card">
                         <div class="profile-avatar">
@@ -187,5 +191,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobreNos.html">Sobre Nós</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons mobile-auth">
+            <a href="#" class="btn btn-outline">Sair</a>
+        </div>
+    </div>
+
+    <script src="JS/menu.js"></script>
 </body>
 </html>
