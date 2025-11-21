@@ -4,39 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoTrabalhos - Conectando talentos a empregos verdes</title>
+
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/mobile.css">
-    <link rel="stylesheet" href="CSS/media.css">
     <link rel="stylesheet" href="CSS/desktop.css">
+    <link rel="stylesheet" href="CSS/mobile.css">    
+    <link rel="stylesheet" href="CSS/media.css">      
 </head>
+
 <body>
     <header>
         <div class="container header-container">
+
             <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="EcoTrabalhos" class="logo-img">
                 <span class="logo-text">EcoTrabalhos</span>
             </a>
-            <nav>
+
+            <nav class="nav-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
                     <li><a href="integrantes.html">Integrantes</a></li>
                     <li><a href="fale-conosco.html">Fale Conosco</a></li>
-                    <li><a href="perfil.html">Perfil</a></li> <!-- NOVO ITEM ADICIONADO -->
+                    <li><a href="perfil.html">Perfil</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
+
+            <div class="auth-buttons desktop-auth">
                 <a href="#" class="btn btn-outline">Entrar</a>
                 <a href="#" class="btn btn-primary">Cadastrar</a>
             </div>
-        </div>
-    </header>
 
-    
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        </header>
+
+
     <section class="hero">
         <div class="container hero-content">
             <h1>Conectamos talentos a empregos que transformam o planeta</h1>
             <p>Encontre oportunidades em sustentabilidade, energia limpa, economia circular e preservação ambiental. Junte-se à revolução verde!</p>
+            
             <div class="search-box">
                 <input type="text" placeholder="Cargo, palavra-chave ou empresa...">
                 <input type="text" placeholder="Localização...">
@@ -45,24 +58,27 @@
         </div>
     </section>
 
-    
+
     <section class="features">
         <div class="container">
             <div class="section-title">
                 <h2>Como funciona a EcoTrabalhos</h2>
                 <p>Uma plataforma completa para conectar profissionais conscientes a oportunidades que fazem a diferença</p>
             </div>
+
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
                     <h3>Índice de Impacto</h3>
                     <p>Cada vaga possui um índice que mede seu impacto social e ecológico, ajudando você a escolher oportunidades que realmente fazem a diferença.</p>
                 </div>
+
                 <div class="feature-card">
                     <div class="feature-icon">🌍</div>
                     <h3>Alcance Global</h3>
                     <p>Conectamos talentos e empresas de todo o mundo, promovendo uma rede internacional de profissionais da sustentabilidade.</p>
                 </div>
+
                 <div class="feature-card">
                     <div class="feature-icon">💚</div>
                     <h3>Valorização do Impacto</h3>
@@ -72,92 +88,113 @@
         </div>
     </section>
 
-    
+
     <section class="jobs">
         <div class="container">
             <div class="section-title">
                 <h2>Vagas em Destaque</h2>
                 <p>Oportunidades com alto índice de impacto ambiental e social</p>
             </div>
+
             <div class="jobs-grid">
+
                 <div class="job-card">
                     <div class="job-header">
                         <h3>Especialista em Energia Solar</h3>
                         <div class="job-company">SolarTech Brasil</div>
                     </div>
+
                     <div class="job-body">
                         <div class="job-details">
                             <span>São Paulo, SP</span>
                             <span>R$ 8.500/mês</span>
                         </div>
+
                         <div class="job-impact">
                             <span>Impacto Ecológico:</span>
                             <div class="impact-stars">★★★★★</div>
                         </div>
-                        <p class="job-description">Projetar e implementar sistemas de energia solar residenciais e comerciais, contribuindo para a transição energética limpa.</p>
+
+                        <p class="job-description">Projetar e implementar sistemas de energia solar residenciais e comerciais.</p>
+
                         <a href="#" class="btn btn-primary">Ver Vaga</a>
                     </div>
                 </div>
+
                 <div class="job-card">
                     <div class="job-header">
                         <h3>Coordenador de Economia Circular</h3>
                         <div class="job-company">EcoCycle Solutions</div>
                     </div>
+
                     <div class="job-body">
                         <div class="job-details">
                             <span>Remoto</span>
                             <span>R$ 9.200/mês</span>
                         </div>
+
                         <div class="job-impact">
                             <span>Impacto Ecológico:</span>
                             <div class="impact-stars">★★★★☆</div>
                         </div>
-                        <p class="job-description">Desenvolver e implementar estratégias de economia circular para reduzir resíduos e promover o reaproveitamento de materiais.</p>
+
+                        <p class="job-description">Desenvolver estratégias de economia circular para reduzir resíduos.</p>
+
                         <a href="#" class="btn btn-primary">Ver Vaga</a>
                     </div>
                 </div>
+
                 <div class="job-card">
                     <div class="job-header">
                         <h3>Engenheiro Ambiental</h3>
                         <div class="job-company">GreenWater Technologies</div>
                     </div>
+
                     <div class="job-body">
                         <div class="job-details">
                             <span>Curitiba, PR</span>
                             <span>R$ 7.800/mês</span>
                         </div>
+
                         <div class="job-impact">
                             <span>Impacto Ecológico:</span>
                             <div class="impact-stars">★★★★★</div>
                         </div>
-                        <p class="job-description">Atuar no desenvolvimento de tecnologias para tratamento de água e efluentes, garantindo qualidade e sustentabilidade.</p>
+
+                        <p class="job-description">Atuar no desenvolvimento de tecnologias para tratamento de água e efluentes.</p>
+
                         <a href="#" class="btn btn-primary">Ver Vaga</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-   
+
     <section class="impact">
         <div class="container">
             <div class="section-title">
                 <h2>Nosso Impacto</h2>
                 <p>Juntos estamos construindo um futuro mais sustentável</p>
             </div>
+
             <div class="impact-stats">
                 <div class="stat">
                     <div class="stat-number">5.247</div>
                     <div class="stat-text">Vagas Verdes Preenchidas</div>
                 </div>
+
                 <div class="stat">
                     <div class="stat-number">892</div>
                     <div class="stat-text">Empresas Parceiras</div>
                 </div>
+
                 <div class="stat">
                     <div class="stat-number">63</div>
                     <div class="stat-text">Países Atendidos</div>
                 </div>
+
                 <div class="stat">
                     <div class="stat-number">1.2M</div>
                     <div class="stat-text">Toneladas de CO₂ Economizadas</div>
@@ -166,17 +203,20 @@
         </div>
     </section>
 
-   
-      <footer>
+
+    <footer>
         <div class="container">
+
             <div class="footer-content">
+
                 <div class="footer-column">
                     <div class="footer-logo">
                         <img src="img/logo-white.png" alt="EcoTrabalhos" class="logo-img">
                         <span class="logo-text">EcoTrabalhos</span>
                     </div>
-                    <p>Conectando talentos a empregos que fazem a diferença para o planeta. Junte-se à revolução verde!</p>
+                    <p>Conectando talentos a empregos que fazem a diferença para o planeta.</p>
                 </div>
+
                 <div class="footer-column">
                     <h3>Links Rápidos</h3>
                     <ul class="footer-links">
@@ -184,9 +224,10 @@
                         <li><a href="sobre.html">Sobre Nós</a></li>
                         <li><a href="integrantes.html">Integrantes</a></li>
                         <li><a href="fale-conosco.html">Fale Conosco</a></li>
-                        <li><a href="perfil.html">Perfil</a></li> <!-- NOVO ITEM ADICIONADO -->
+                        <li><a href="perfil.html">Perfil</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-column">
                     <h3>Categorias</h3>
                     <ul class="footer-links">
@@ -197,6 +238,7 @@
                         <li><a href="#">Mobilidade Elétrica</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-column">
                     <h3>Contato</h3>
                     <ul class="footer-links">
@@ -206,11 +248,34 @@
                         <li><a href="fale-conosco.html">FAQ</a></li>
                     </ul>
                 </div>
+
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2023 EcoTrabalhos. Todos os direitos reservados.</p>
             </div>
+
         </div>
     </footer>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobreNos.html">Sobre Nós</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons mobile-auth">
+            <a href="#" class="btn btn-outline">Entrar</a>
+            <a href="#" class="btn btn-primary">Cadastrar</a>
+        </div>
+    </div>
+
+    <script src="JS/menu.js"></script>
+
 </body>
 </html>
