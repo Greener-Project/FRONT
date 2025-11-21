@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Entre em contato com a EcoTrabalhos - estamos aqui para ajudar e ouvir suas ideias">
     <title>Fale Conosco - EcoTrabalhos</title>
+    
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/fale-conosco.css">
-    <link rel="stylesheet" href="CSS/mobile.css">
-    <link rel="stylesheet" href="CSS/media.css">
-    <link rel="stylesheet" href="CSS/desktop.css">
+    <link rel="stylesheet" href="CSS/desktop.css"> <link rel="stylesheet" href="CSS/mobile.css">  <link rel="stylesheet" href="CSS/media.css">
 </head>
 <body>
     <header>
@@ -18,7 +17,8 @@
                 <img src="img/logo.png" alt="EcoTrabalhos" class="logo-img">
                 <span class="logo-text">EcoTrabalhos</span>
             </a>
-            <nav>
+
+            <nav class="nav-desktop">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
@@ -27,10 +27,17 @@
                     <li><a href="perfil.html">Perfil</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
+
+            <div class="auth-buttons desktop-auth">
                 <a href="#" class="btn btn-outline">Entrar</a>
                 <a href="#" class="btn btn-primary">Cadastrar</a>
             </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
@@ -122,5 +129,23 @@
             </div>
         </div>
     </footer>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-mobile">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobreNos.html">Sobre Nós</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons mobile-auth">
+            <a href="#" class="btn btn-outline">Entrar</a>
+            <a href="#" class="btn btn-primary">Cadastrar</a>
+        </div>
+    </div>
+
+    <script src="JS/menu.js"></script>
 </body>
 </html>
