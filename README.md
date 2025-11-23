@@ -41,24 +41,30 @@ gs/
 ├── perfil.html               # Página de perfil do usuário
 ├── integrantes.html          # Página dos integrantes da equipe
 ├── fale-conosco.html         # Página de contato
-├── sobreNos.html            # Página sobre a empresa
+├── sobreNos.html             # Página sobre a empresa
+├── faq.html                  # Página FAQ 
 ├── img/                      # Diretório de imagens
 │   ├── logo.png              # Logo do projeto
+│   ├── logo-white.png        # Logo branco para footer
 │   ├── fundo.jpg             # Imagem de fundo
+│   ├── avatar.jpg            # Avatar padrão
 │   └── integrantes/          # Fotos dos integrantes
-│       ├── integrante1.jpg
-│       ├── integrante2.jpg
-│       └── integrante3.jpg
+│       ├── pedro.jpeg
+│       ├── matheus.jpeg
+│       └── leandro.jpeg
 ├── js/                       # Diretório de scripts JavaScript
-│   └── menu.js               # Controle do menu responsivo
+│   ├── menu.js               # Controle do menu responsivo
+│   └── faq.js                # Funcionalidades do FAQ 
 └── css/                      # Diretório de estilos
     ├── style.css             # Estilos principais
     ├── mobile.css            # Estilos para mobile
-    ├── desktop-media.css     # Media queries para desktop
+    ├── desktop.css           # Media queries para desktop
+    ├── media.css             # Media queries para tablet
     ├── perfil.css            # Estilos específicos do perfil
     ├── fale-conosco.css      # Estilos da página de contato
     ├── integrantes.css       # Estilos da página de integrantes
-    └── sobreNos.css          # Estilos da página sobre nós
+    ├── sobreNos.css          # Estilos da página sobre nós
+    └── faq.css               # Estilos da página FAQ 
 🎯 Público-Alvo
 Jovens profissionais e estudantes em busca de propósito
 
