@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perguntas frequentes - Greener - Encontre respostas para suas dúvidas sobre empregos verdes e sustentabilidade">
+    <title>FAQ - Greener</title>
+    
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/faq.css">
+    <link rel="stylesheet" href="CSS/desktop.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Greener" class="logo-img">
+                <span class="logo-text">Greener</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                    <li><a href="perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+
+            <div class="auth-buttons desktop-auth">
+                <a href="#" class="btn btn-outline">Entrar</a>
+                <a href="#" class="btn btn-primary">Cadastrar</a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="header-faq">
+        <div class="headline-faq">
+            <h2>Perguntas Frequentes</h2>
+            <p>Encontre respostas para as dúvidas mais comuns sobre empregos verdes e sustentabilidade</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-search">
+                <input type="text" id="faqSearch" placeholder="🔍 Buscar nas perguntas frequentes...">
+            </div>
+
+            <div class="faq-categories">
+                <button class="category-btn active" data-category="all">Todas</button>
+                <button class="category-btn" data-category="cadastro">Cadastro</button>
+                <button class="category-btn" data-category="vagas">Vagas</button>
+                <button class="category-btn" data-category="empresas">Empresas</button>
+                <button class="category-btn" data-category="sustentabilidade">Sustentabilidade</button>
+                <button class="category-btn" data-category="tecnologia">Tecnologia</button>
+            </div>
+
+            <div class="faq-container">
+                <!-- Categoria: Cadastro -->
+                <div class="faq-category" data-category="cadastro">
+                    <h3>📝 Cadastro e Perfil</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como faço para me cadastrar na plataforma?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O cadastro é simples e gratuito! Clique em "Cadastrar" no menu superior, preencha seus dados básicos (nome, e-mail, senha), complete seu perfil profissional e escolha as áreas de interesse em sustentabilidade. Em menos de 5 minutos você estará pronto para explorar oportunidades verdes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Posso ter mais de um tipo de perfil na plataforma?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Oferecemos perfis para profissionais em busca de emprego e para empresas que desejam divulgar vagas. Você pode alternar entre os modos ou criar contas separadas conforme sua necessidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como funciona o Green ID?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O Green ID é sua identidade digital verde! Ele registra suas competências em sustentabilidade, cursos realizados, projetos ecológicos e seu impacto ambiental positivo. Quanto mais completo seu Green ID, maior sua visibilidade para empresas sustentáveis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: Vagas -->
+                <div class="faq-category" data-category="vagas">
+                    <h3>💼 Vagas e Oportunidades</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>O que são considerados "empregos verdes"?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Empregos verdes são ocupações que contribuem significativamente para a preservação e restauração do meio ambiente. Incluem áreas como energias renováveis, eficiência energética, gestão de resíduos, agricultura sustentável, conservação da biodiversidade e todas as profissões que ajudam a reduzir o impacto ambiental.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como o índice de impacto ecológico funciona?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Desenvolvemos um sistema único de classificação (1-5 estrelas) que avalia o impacto positivo de cada vaga considerando: redução de emissões de carbono, economia de recursos naturais, contribuição para economia circular e alinhamento com os ODS da ONU. Vagas com 5 estrelas têm o maior impacto ambiental positivo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Posso me candidatar a vagas internacionais?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Temos parcerias com empresas sustentáveis em mais de 60 países. Use os filtros de localização para buscar oportunidades globais. A IA Gaia também pode recomendar vagas internacionais baseadas no seu perfil e competências.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: Empresas -->
+                <div class="faq-category" data-category="empresas">
+                    <h3>🏢 Para Empresas</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como minha empresa pode divulgar vagas na plataforma?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Empresas podem criar um perfil corporativo, preencher informações sobre suas práticas ESG e publicar vagas. Oferecemos planos gratuitos para pequenas empresas e planos premium com maior visibilidade e ferramentas de recrutamento avançadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>O que é necessário para uma vaga ser considerada "verde"?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A vaga deve contribuir diretamente para a sustentabilidade ambiental. Avaliamos: descrição da função, impacto ambiental da posição, setor da empresa e políticas ambientais. Nossa equipe verifica cada anúncio para garantir a autenticidade do compromisso verde.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: Sustentabilidade -->
+                <div class="faq-category" data-category="sustentabilidade">
+                    <h3>🌱 Sustentabilidade</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como a Greener contribui para os ODS da ONU?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nosso trabalho está alinhado principalmente com os ODS 4 (Educação de Qualidade), 8 (Trabalho Decente), 10 (Redução das Desigualdades) e 13 (Ação contra Mudança Climática). A cada vaga preenchida através da plataforma, medimos e reportamos nosso impacto nos Objetivos de Desenvolvimento Sustentável.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>O que são ImpactCoins e como ganhá-las?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>ImpactCoins são nossa moeda de impacto que recompensa ações sustentáveis. Você ganha ao: completar cursos verdes, participar de voluntariado ambiental, reduzir sua pegada de carbono e conseguir empregos através da plataforma. As ImpactCoins podem ser trocadas por benefícios e doadas para projetos ecológicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria: Tecnologia -->
+                <div class="faq-category" data-category="tecnologia">
+                    <h3>🤖 Tecnologia</h3>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Como a IA Gaia funciona?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>A IA Gaia é nossa inteligência artificial que analisa seu perfil, competências e interesses para recomendar oportunidades personalizadas. Ela aprende com suas interações e sugere vagas, cursos e comunidades que combinam com seus objetivos de carreira sustentável.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Os dados do Green ID são seguros?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim! Utilizamos blockchain para garantir a segurança e transparência dos dados do Green ID. Suas informações são criptografadas e você tem controle total sobre quais dados compartilhar com empresas. Seguimos rigorosamente a LGPD e regulamentações internacionais de proteção de dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-contact">
+                <div class="contact-card">
+                    <h3>Não encontrou o que procurava?</h3>
+                    <p>Nossa equipe está aqui para ajudar você</p>
+                    <a href="fale-conosco.html" class="btn btn-primary">Entrar em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/logo-white.png" alt="Greener" class="logo-img">
+                        <span class="logo-text">Greener</span>
+                    </div>
+                    <p>Conectando talentos a empregos que fazem a diferença para o planeta. Junte-se à revolução verde!</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobreNos.html">Sobre Nós</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                        <li><a href="perfil.html">Perfil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Áreas Verdes</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Energia Renovável</a></li>
+                        <li><a href="#">Gestão Ambiental</a></li>
+                        <li><a href="#">Agricultura Sustentável</a></li>
+                        <li><a href="#">Economia Circular</a></li>
+                        <li><a href="#">Mobilidade Elétrica</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contato@greener.com">contato@greener.com</a></li>
+                        <li><a href="tel:+551199999999">(11) 9999-9999</a></li>
+                        <li><a href="fale-conosco.html">Trabalhe Conosco</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Greener. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-mobile">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobreNos.html">Sobre Nós</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li> <!-- ADICIONAR ESTA LINHA -->
+        <li><a href="fale-conosco.html">Fale Conosco</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+</nav>
+
+        <div class="auth-buttons mobile-auth">
+            <a href="#" class="btn btn-outline">Entrar</a>
+            <a href="#" class="btn btn-primary">Cadastrar</a>
+        </div>
+    </div>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/faq.js"></script>
+</body>
+</html>
