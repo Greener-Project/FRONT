@@ -61,13 +61,10 @@ Contém os scripts para as funcionalidades dinâmicas.
 
 ### 🖼️ Diretório `img/` (Imagens e Recursos Visuais)
 * `logo.png` - Logo principal.
-* `logo-white.png` - Logo branco (rodapé/fundo escuro).
-* `fundo.jpg` - Imagem de fundo principal.
-* `avatar.jpg` - Avatar padrão para usuários.
-* `integrantes/`
-    * `pedro.jpeg`
-    * `matheus.jpeg`
-    * `leandro.jpeg`
+* `fundo.AVIF` - Imagem de fundo principal.
+* `pedro.jpeg` - imagem dos integrantes.
+*  `matheus.jpeg` - imagem dos integrantes.
+* `leandro.jpeg` - imagem dos integrantes.
 🎯 Público-Alvo
 Jovens profissionais e estudantes em busca de propósito
 
