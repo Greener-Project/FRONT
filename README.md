@@ -34,37 +34,39 @@ Frameworks: (A definir conforme implementação)
 
 Futuras Integrações: IA, Blockchain, Web3
 
-📁 Estrutura do Projeto
-text
-gs/
-├── index.html                 # Página principal
-├── perfil.html               # Página de perfil do usuário
-├── integrantes.html          # Página dos integrantes da equipe
-├── fale-conosco.html         # Página de contato
-├── sobreNos.html             # Página sobre a empresa
-├── faq.html                  # Página FAQ 
-├── img/                      # Diretório de imagens
-│   ├── logo.png              # Logo do projeto
-│   ├── logo-white.png        # Logo branco para footer
-│   ├── fundo.jpg             # Imagem de fundo
-│   ├── avatar.jpg            # Avatar padrão
-│   └── integrantes/          # Fotos dos integrantes
+📁 Projeto Greener
+│
+├── index.html              # Página inicial
+├── perfil.html             # Página de perfil do usuário
+├── integrantes.html        # Página dos integrantes da equipe
+├── fale-conosco.html       # Página de contato
+├── sobreNos.html           # Página institucional
+├── faq.html                # Página de perguntas frequentes
+│
+├── img/                    # Diretório de imagens
+│   ├── logo.png            # Logo principal
+│   ├── logo-white.png      # Logo branco (rodapé)
+│   ├── fundo.jpg           # Imagem de fundo
+│   ├── avatar.jpg          # Avatar padrão
+│   └── integrantes/        # Fotos dos membros da equipe
 │       ├── pedro.jpeg
 │       ├── matheus.jpeg
 │       └── leandro.jpeg
-├── js/                       # Diretório de scripts JavaScript
-│   ├── menu.js               # Controle do menu responsivo
-│   └── faq.js                # Funcionalidades do FAQ 
-└── css/                      # Diretório de estilos
-    ├── style.css             # Estilos principais
-    ├── mobile.css            # Estilos para mobile
-    ├── desktop.css           # Media queries para desktop
-    ├── media.css             # Media queries para tablet
-    ├── perfil.css            # Estilos específicos do perfil
-    ├── fale-conosco.css      # Estilos da página de contato
-    ├── integrantes.css       # Estilos da página de integrantes
-    ├── sobreNos.css          # Estilos da página sobre nós
-    └── faq.css               # Estilos da página FAQ 
+│
+├── js/                     # Scripts JavaScript
+│   ├── menu.js             # Controle do menu responsivo
+│   └── faq.js              # Funcionalidades do FAQ
+│
+└── css/                    # Estilos CSS
+    ├── style.css           # Estilos principais
+    ├── mobile.css          # Estilos para mobile
+    ├── desktop.css         # Media queries para desktop
+    ├── media.css           # Estilos para tablet
+    ├── perfil.css          # Estilos da página de perfil
+    ├── fale-conosco.css    # Estilos da página de contato
+    ├── integrantes.css     # Estilos da página de integrantes
+    ├── sobreNos.css        # Estilos da página institucional
+    └── faq.css             # Estilos da página FAQ
 🎯 Público-Alvo
 Jovens profissionais e estudantes em busca de propósito
 
