@@ -1,5 +1,3 @@
-/* ========== PÁGINA DE PERFIL - MOBILE FIRST ========== */
-
 .profile-main {
     padding: 20px 0 40px;
     background-color: var(--cinza-claro);
@@ -26,13 +24,14 @@
 
 .profile-content {
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 
-/* Sidebar - MOBILE */
+/* Sidebar */
 .profile-sidebar {
-    order: 2;
+    width: 100%;
+    max-width: 350px;
+    flex-shrink: 0;
 }
 
 .profile-card {
@@ -60,13 +59,13 @@
 
 .edit-avatar-btn {
     background: var(--verde-claro);
-    color: var(--verde-principal);
+    color: #006400; /* Verde escuro para contraste */
     border: none;
     padding: 6px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .profile-info h2 {
@@ -87,6 +86,7 @@
     font-size: 0.8rem;
     line-height: 1.4;
     margin-bottom: 15px;
+    font-style: italic;
 }
 
 .profile-stats {
@@ -94,10 +94,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 15px;
-}
-
-.stat-item {
-    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
 }
 
 .stat-number {
@@ -113,60 +111,47 @@
     margin-top: 3px;
 }
 
-/* Navegação do perfil - MOBILE */
+/* Navegação */
 .profile-nav {
     background: var(--branco);
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     border: 1px solid var(--verde-claro);
-    overflow-x: auto;
-    display: flex;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
 }
 
 .nav-item {
     display: block;
-    padding: 15px 12px;
+    padding: 15px 20px;
     text-decoration: none;
     color: var(--cinza-escuro);
     font-weight: 500;
-    font-size: 0.85rem;
-    white-space: nowrap;
-    border-right: 1px solid var(--verde-claro);
-    text-align: center;
-    min-width: 120px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s;
 }
 
-.nav-item:last-child {
-    border-right: none;
-}
-
-.nav-item.active {
+.nav-item:hover, .nav-item.active {
     background: var(--verde-principal);
     color: var(--branco);
 }
 
-/* Conteúdo principal - MOBILE */
+/* Conteúdo Principal */
 .profile-main-content {
+    flex-grow: 1;
     background: var(--branco);
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     border: 1px solid var(--verde-claro);
-    overflow: hidden;
-    order: 1;
-}
-
-.profile-section {
-    padding: 25px 20px;
+    padding: 25px;
 }
 
 .section-header {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
-    padding-bottom: 12px;
     border-bottom: 1px solid var(--verde-claro);
+    padding-bottom: 10px;
 }
 
 .section-header h3 {
@@ -176,24 +161,27 @@
     margin: 0;
 }
 
+/* Botão Editar/Salvar */
 .btn-edit {
-    background: var(--verde-principal);
+    background: var(--cinza-escuro);
     color: var(--branco);
     border: none;
-    padding: 8px 16px;
+    padding: 8px 20px;
     border-radius: 5px;
     font-weight: 500;
     cursor: pointer;
     font-size: 0.9rem;
-    align-self: flex-start;
+    transition: background 0.3s;
 }
 
-/* Informações Pessoais - MOBILE */
+.btn-edit.saving {
+    background: var(--verde-principal); /* Muda para verde ao salvar */
+}
+
 .info-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .info-group {
@@ -204,15 +192,35 @@
 .info-group label {
     font-weight: 600;
     color: var(--verde-principal);
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 0.9rem;
 }
 
-.info-group p {
+/* --- ESTILOS DOS INPUTS EDITÁVEIS --- */
+
+.editable-input {
+    font-size: 0.95rem;
     color: var(--cinza-escuro);
     padding: 10px;
-    background: var(--cinza-claro);
+    border: 1px solid transparent; /* Invisível por padrão */
+    background-color: var(--cinza-claro);
     border-radius: 5px;
-    margin: 0;
-    font-size: 0.9rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+/* Estilo quando o campo está HABILITADO para edição */
+.editable-input:not(:disabled) {
+    background-color: #fff;
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.1);
+    outline: none;
+}
+
+/* Textarea específico */
+textarea.editable-input {
+    resize: none;
+    min-height: 100px;
+    line-height: 1.5;
 }
