@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/perfil.css">
-    <link rel="stylesheet" href="CSS/desktop.css"> <link rel="stylesheet" href="CSS/mobile.css">  <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/desktop.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/media.css">
 </head>
 <body>
     <header>
@@ -48,76 +50,86 @@
             </div>
 
             <div class="profile-content">
+
+                <!-- CONTEÚDO PRINCIPAL -->
                 <div class="profile-main-content">
                     <section class="profile-section">
+                        
+                        <!-- ----------- INFORMAÇÕES PESSOAIS ----------- -->
                         <div class="section-header">
                             <h3>Informações Pessoais</h3>
-                            <button class="btn-edit">Editar</button>
+                            <button class="btn-edit" id="btnEditPersonal" onclick="toggleEdit('personal')">Editar</button>
                         </div>
-                        
-                        <div class="info-grid">
+
+                        <div class="info-grid" id="personal-fields">
                             <div class="info-group">
                                 <label>Nome Completo</label>
-                                <p>Maria Silva Santos</p>
+                                <input type="text" id="nome" class="editable-input" disabled placeholder="Digite seu nome completo">
                             </div>
                             <div class="info-group">
                                 <label>E-mail</label>
-                                <p>maria.silva@email.com</p>
+                                <input type="email" id="email" class="editable-input" disabled placeholder="Digite seu e-mail">
                             </div>
                             <div class="info-group">
                                 <label>Telefone</label>
-                                <p>(11) 99999-9999</p>
+                                <input type="text" id="telefone" class="editable-input" disabled placeholder="Digite seu telefone">
                             </div>
                             <div class="info-group">
                                 <label>Localização</label>
-                                <p>São Paulo, SP</p>
+                                <input type="text" id="localizacao" class="editable-input" disabled placeholder="Cidade, Estado">
                             </div>
                             <div class="info-group">
                                 <label>Data de Nascimento</label>
-                                <p>15/03/1990</p>
+                                <input type="date" id="nascimento" class="editable-input" disabled>
                             </div>
                             <div class="info-group">
                                 <label>CPF</label>
-                                <p>123.456.789-00</p>
+                                <input type="text" id="cpf" class="editable-input" disabled placeholder="Digite seu CPF">
                             </div>
                         </div>
 
+                        <!-- ----------- INFORMAÇÕES PROFISSIONAIS ----------- -->
                         <div class="section-header">
                             <h3>Informações Profissionais</h3>
+                            <button class="btn-edit" id="btnEditProf" onclick="toggleEdit('prof')">Editar</button>
                         </div>
-                        
-                        <div class="info-grid">
+
+                        <div class="info-grid" id="prof-fields">
                             <div class="info-group">
                                 <label>Área de Atuação</label>
-                                <p>Engenharia Ambiental</p>
+                                <input type="text" id="area" class="editable-input" disabled placeholder="Digite sua área de atuação">
                             </div>
                             <div class="info-group">
                                 <label>Nível de Experiência</label>
-                                <p>Pleno (3-5 anos)</p>
+                                <input type="text" id="nivel" class="editable-input" disabled placeholder="Ex: Júnior, Pleno, Sênior">
                             </div>
                             <div class="info-group">
                                 <label>Formação Acadêmica</label>
-                                <p>Bacharelado em Engenharia Ambiental - USP</p>
+                                <input type="text" id="formacao" class="editable-input" disabled placeholder="Digite sua formação">
                             </div>
                             <div class="info-group">
                                 <label>Resumo Profissional</label>
-                                <p>Engenheira ambiental com 4 anos de experiência em projetos de sustentabilidade, gestão de recursos hídricos e implementação de sistemas de energia renovável.</p>
+                                <textarea id="resumo" class="editable-input" disabled placeholder="Digite seu resumo profissional"></textarea>
                             </div>
                         </div>
+
                     </section>
                 </div>
 
+                <!-- SIDEBAR -->
                 <div class="profile-sidebar">
                     <div class="profile-card">
                         <div class="profile-avatar">
                             <img src="img/avatar.jpg" alt="Foto do perfil">
                             <button class="edit-avatar-btn">Alterar Foto</button>
                         </div>
+
                         <div class="profile-info">
-                            <h2>Maria Silva</h2>
-                            <p class="profile-email">maria.silva@email.com</p>
-                            <p class="profile-bio">Engenheira Ambiental apaixonada por sustentabilidade e energias renováveis</p>
+                            <h2 id="sidebar-name">Seu nome</h2>
+                            <p id="sidebar-email" class="profile-email"></p>
+                            <p id="sidebar-role" class="profile-bio"></p>
                         </div>
+
                         <div class="profile-stats">
                             <div class="stat-item">
                                 <span class="stat-number">12</span>
@@ -142,6 +154,7 @@
                         <a href="#" class="nav-item">Configurações</a>
                     </nav>
                 </div>
+
             </div>
         </div>
     </main>
@@ -154,13 +167,13 @@
                         <img src="img/logo-white.png" alt="EcoTrabalhos" class="logo-img">
                         <span class="logo-text">EcoTrabalhos</span>
                     </div>
-                    <p>Conectando talentos a empregos que fazem a diferença para o planeta. Junte-se à revolução verde!</p>
+                    <p>Conectando talentos a empregos que fazem a diferença para o planeta.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Links Rápidos</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="sobreNos.html">Sobre Nós</a></li>
                         <li><a href="integrantes.html">Integrantes</a></li>
                         <li><a href="fale-conosco.html">Fale Conosco</a></li>
                         <li><a href="perfil.html">Perfil</a></li>
@@ -186,8 +199,9 @@
                     </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2023 EcoTrabalhos. Todos os direitos reservados.</p>
+                <p>&copy; 2025 EcoTrabalhos. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -202,6 +216,7 @@
                 <li><a href="perfil.html">Perfil</a></li>
             </ul>
         </nav>
+
         <div class="auth-buttons mobile-auth">
             <a href="#" class="btn btn-outline">Sair</a>
         </div>
